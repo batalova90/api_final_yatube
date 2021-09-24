@@ -18,7 +18,7 @@ class MixinViewSet(mixins.CreateModelMixin, mixins.UpdateModelMixin,
 class PostViewSet(viewsets.ModelViewSet, MixinViewSet):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
-    permission_classes = (AuthorSafeMethods,)
+    permission_classes = (AuthorSafeMethods, )
     pagination_class = LimitOffsetPagination
 
     def perform_create(self, serializer):

@@ -8,13 +8,13 @@ from posts.models import Comment, Post, Group, Follow, User
 class PostSerializer(serializers.ModelSerializer):
     author = SlugRelatedField(slug_field='username', read_only=True)
     image = serializers.ImageField(required=False)
-    pub_date = serializers.DateTimeField(read_only=True)
     group = serializers.PrimaryKeyRelatedField(required=False,
                                                queryset=Group.objects.all())
 
     class Meta:
         fields = '__all__'
         model = Post
+        read_only_fields = ('author', 'pub_date', )
 
 
 class GroupSerializer(serializers.ModelSerializer):
@@ -24,15 +24,14 @@ class GroupSerializer(serializers.ModelSerializer):
 
 
 class CommentSerializer(serializers.ModelSerializer):
-    author = serializers.SlugRelatedField(
-        read_only=True, slug_field='username'
-    )
+    author = serializers.SlugRelatedField(slug_field='username',
+                                          read_only=True, )
     post = serializers.PrimaryKeyRelatedField(required=False, read_only=True)
-    created = serializers.DateTimeField(read_only=True)
 
     class Meta:
         fields = '__all__'
         model = Comment
+        read_only_fields = ('author', 'post', 'created')
 
 
 class FollowSerializer(serializers.ModelSerializer):
