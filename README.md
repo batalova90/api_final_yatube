@@ -2,6 +2,8 @@
 
 ## Инструменты ##
 [<img align="left" alt="Python" src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badse&logo=python&logoColor=yellow" />](https://www.python.org/)
+[<img align="left" alt="Python" src="https://michaeldc86.github.io/django_rest.png" />](https://www.django-rest-framework.org/)
+
 <br/>
 
 ## Установка ##
