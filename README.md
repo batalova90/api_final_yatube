@@ -2,7 +2,7 @@
 
 ## Инструменты ##
 <img align="left" alt="GraphQL" width="32px" src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badse&logo=python&logoColor=yellow" />
-
+<br/>
 ## Установка ##
 
 Клонировать репозиторий:
