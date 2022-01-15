@@ -1,5 +1,8 @@
 # Приложение реализует API для социальной сети (публикация постов пользователей) #
 
+## Инструменты ##
+[<img align="left" alt="GraphQL" width="26px" src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badse&logo=python&logoColor=yellow" />]
+
 ## Установка ##
 
 Клонировать репозиторий:
