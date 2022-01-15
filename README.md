@@ -1,7 +1,7 @@
 # Приложение реализует API для социальной сети (публикация постов пользователей) #
 
 ## Инструменты ##
-<img align="left" alt="Python" width="60px" src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badse&logo=python&logoColor=yellow" />
+<img align="left" alt="Python" width="70px" src="https://img.shields.io/badge/python-%2314354C.svg?style=for-the-badse&logo=python&logoColor=yellow" />
 <br/>
 ## Установка ##
 
